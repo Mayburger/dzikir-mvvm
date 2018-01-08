@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "dzikirId": "dhikr",
+      "dzikirName": "Dhikr Collection",
+      "dzikirCount": "7 Dhikr"
+    },
+    {
+      "dzikirId": "dua",
+      "dzikirName": "Du'a Collection",
+      "dzikirCount": "7 Du'as"
+    },
+    {
+      "dzikirId": "quran",
+      "dzikirName": "The Holy Qur'an",
+      "dzikirCount": "114 Surah (Won't change)"
+    }
+  ]
+}

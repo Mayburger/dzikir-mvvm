@@ -1,6 +1,7 @@
 package com.nacoda.dzikir_mvvm.data.remote;
 
 import android.content.Context;
+import android.graphics.Typeface;
 
 import com.nacoda.moviesmvvm.data.source.DzikirDataSource;
 
@@ -18,7 +19,7 @@ public class DzikirRemoteDataSource implements DzikirDataSource {
     public void getDzikirList(@NotNull GetDzikirListCallback callback, @NotNull Context mContext) {
         String json = null;
         try {
-            InputStream is = mContext.getAssets().open("json/dzikir_list_english.json");
+            InputStream is = mContext.getAssets().open("json/list/main.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);

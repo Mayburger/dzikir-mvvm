@@ -5,6 +5,7 @@ import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.databinding.ObservableArrayList
 import android.databinding.ObservableList
+import android.graphics.Typeface
 import android.widget.Toast
 import com.google.gson.GsonBuilder
 import com.nacoda.dzikir_mvvm.model.DzikirList
@@ -15,7 +16,7 @@ import com.nacoda.moviesmvvm.data.source.DzikirRepository
  * Created by irfanirawansukirman on 04/12/17.
  */
 
-class DzikirListViewModel(context: Application, private val mDzikirRepository: DzikirRepository) : AndroidViewModel(context) {
+ class DzikirListViewModel(context: Application, private val mDzikirRepository: DzikirRepository) : AndroidViewModel(context) {
 
     @SuppressLint("StaticFieldLeak")
     var mContext = context
@@ -33,7 +34,7 @@ class DzikirListViewModel(context: Application, private val mDzikirRepository: D
                 val gson = gsonBuilder.create()
                 val dzikir = gson.fromJson(response, DzikirList::class.java)
 
-                with(dzikirList){
+                with(dzikirList) {
                     add(dzikir)
                 }
             }

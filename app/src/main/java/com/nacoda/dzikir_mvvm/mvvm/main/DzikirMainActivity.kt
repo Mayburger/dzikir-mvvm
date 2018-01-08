@@ -5,17 +5,17 @@ import android.widget.Toolbar
 
 import com.nacoda.dzikir_mvvm.R
 import com.nacoda.dzikir_mvvm.base.BaseActivity
+import com.nacoda.dzikir_mvvm.databinding.DzikirListFragmentBinding
 import com.nacoda.moviesmvvm.mvvm.main.movies.popular.DzikirListFragment
 import com.nacoda.moviesmvvm.util.replaceFragmentInActivity
 
-class MainDzikirActivity : BaseActivity() {
-
-    private lateinit var mToolbar: Toolbar
+class DzikirMainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_dzikir_activity)
+        setContentView(R.layout.dzikir_main_activity)
         setupFragment()
+
     }
 
     private fun setupFragment() {
@@ -24,4 +24,5 @@ class MainDzikirActivity : BaseActivity() {
             replaceFragmentInActivity(it, R.id.dzikir_main_frame)
         }
     }
+
 }
